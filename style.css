@@ -1,0 +1,129 @@
+
+   button
+   {
+    border: hidden;
+    cursor: pointer;
+    outline: none;
+    font-family: Coronet;
+    margin-bottom: 5px;
+    background-color: transparent;
+    cursor:pointer;
+   }
+body
+{
+    background:black;
+}
+
+.volume
+{
+    color:white;
+    font-size: 45px;
+}
+
+.player
+{
+   margin:auto;
+   width: 1500px;
+}
+
+.viewer
+{
+   margin-top:10px;
+   width: 1440px;
+   border-radius: 45px;
+   border:5px solid #8b6f54;
+   cursor:pointer;
+}
+
+#control-panel
+{
+   width: 1440px;
+   height:85px; 
+   background:black;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 76px;
+}
+
+.mute{
+   font-family: Coronet;
+}
+
+.scaling
+{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.time-progress
+{
+    color: #8b6f54;
+}
+
+.video-progress
+{
+   border:1px solid #8b6f54;
+   /* background: linear-gradient(to right, #8b6f54 0%, #8b6f54 0%, #fff 0%, #fff 0%); */
+   height: 7px;
+   width: 820px;
+   outline: none;
+   -webkit-appearance: none;
+   margin: 0 0 5px 41px;   
+   cursor: pointer;
+   border-radius: 200px;
+}
+
+.video-progress::-webkit-slider-thumb {
+   width: 16px;
+   height: 16px;
+   border-radius: 50px;
+   border:2px solid #8b6f54;
+   -webkit-appearance: none;
+   cursor: ew-resize;
+   background:white;
+ }
+
+
+
+ .volume-progress
+{
+   background: linear-gradient(to right, #753b24 0%, #753b24 100%, #fff 100%, #fff 100%);
+   border:1px solid #8b6f54;
+   height: 8px;
+   width: 155px;
+   outline: none;
+   -webkit-appearance: none;
+   margin: 0 0 5px 5px;
+   cursor: pointer;
+   border-radius: 200px;
+}
+
+.volume-progress::-webkit-slider-thumb {
+   width: 15px;
+   height: 15px;
+   border-radius: 50px;
+   border:2px solid #8b6f54;
+   -webkit-appearance: none;
+   cursor: ew-resize;
+   background:white;
+ }
+
+
+
+#video-content
+{
+   display: flex;
+   flex-direction: column;
+}
+
+.little-play
+{
+   font-size: 45px;
+    color:white;
+    
+}
+video::-webkit-media-controls {
+   display:none !important;
+ }
